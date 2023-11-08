@@ -102,16 +102,11 @@ function likes(names) {
 // Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
 function nbYear(p0, percent, aug, p) {
-
-    let res = [];
-
-    let percent = percent / 100;
-
-    for (let p0; p0 < p; p0 += p0 * percent + aug) {
-        currentValue = p0 + p0 * percent + aug;
-        res.push(currentValue);
+    let years = 0;
+    for (years; p0 < p; years++) {
+      p0 += p0 * (percent / 100) + aug;
     }
-    return res.length;
-}
+    return years;
+  }
 
 //------------------Task 3--------
