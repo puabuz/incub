@@ -103,15 +103,15 @@ function likes(names) {
 
 function nbYear(p0, percent, aug, p) {
 
-    let result = [];
+    let res = [];
 
     let percent = percent / 100;
 
     for (let p0; p0 < p; p0 += p0 * percent + aug) {
         currentValue = p0 + p0 * percent + aug;
-        result.push(currentValue);
+        res.push(currentValue);
     }
-    return result.length;
+    return res.length;
 }
 
-//------------------Task 3-----
+//------------------Task 3--------
